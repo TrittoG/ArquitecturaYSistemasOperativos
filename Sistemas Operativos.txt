@@ -1,0 +1,22 @@
+
+		EXPRESIONES REGULARES
+
+1-wget_www.google.com    (descarga el contenido de la pagina y guarda el html)
+
+2-cat /index.html   	(muestra el codigo descargado)
+
+3-sed_'s/<a_/\n<a_/g' index.html>index2.html 	(sustituye lo primero por lo segundo)
+	(esto)(esto)
+	    por
+(en este caso todo lo que esta antes del "<a" le da un salto de linea)
+
+
+4- cat /index2.html   (muestra el html2 para ver si se aplico bien el salto de linea)
+
+5- egrep '<a_.*/a>' index2.html>index3.html  (copia solo la parte de los links (que empliezan por "<a") a otro index)
+	    |   
+   	    |
+	lo que empieza con esto
+	el punto es para que no importe lo que sigue
+	el * para que pase lo mismo en todos los casos
+	/ (que termine con) a>
